@@ -1,4 +1,4 @@
-markdown 
+Markdown 
 # Gym Website
 
 ## Project Overview
@@ -30,3 +30,4 @@ The original version of this project used Flask with:
 - `app.py`
 
 However, for GitHub Pages deployment, it has been converted and structured as a static website.
+
