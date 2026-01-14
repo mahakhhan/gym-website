@@ -13,21 +13,31 @@
 </header>
 
 <nav>
-    <a href="/">Home</a>
-    <a href="/about">About Us</a>
-    <a href="/membership">Membership</a>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="membership.html">Membership</a>
 </nav>
 
 <section class="content">
     <div class="membership-cards">
-        {% for plan in plans %}
         <div class="card">
-            <h3>{{ plan.name }}</h3>
-            <p>{{ plan.duration }}</p>
-            <p>{{ plan.price }}</p>
+            <h3>Basic</h3>
+            <p>1 Month</p>
+            <p>Rs. 5,000</p>
             <button>Join Now</button>
         </div>
-        {% endfor %}
+        <div class="card">
+            <h3>Standard</h3>
+            <p>3 Months</p>
+            <p>Rs. 13,000</p>
+            <button>Join Now</button>
+        </div>
+        <div class="card">
+            <h3>Premium</h3>
+            <p>6 Months</p>
+            <p>Rs. 25,000</p>
+            <button>Join Now</button>
+        </div>
     </div>
 </section>
 
