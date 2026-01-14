@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PowerFit Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>PowerFit Gym</h1>
+    <p>Transform Your Body, Transform Your Life</p>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/membership">Membership</a>
+</nav>
+
+<div class="hero">
+    <img src="{{ url_for('static', filename='images/gym 1.jpeg') }}">
+</div>
+
+<section class="content">
+    <h2>Welcome to PowerFit Gym</h2>
+    <p>
+        PowerFit Gym is a modern fitness center designed to help you
+        achieve your health and fitness goals. We provide professional
+        trainers, quality equipment, and a motivating environment.
+    </p>
+
+  <h3>Our Services</h3>
+<div class="services">
+    <div class="service-item">
+        <img src="{{ url_for('static', filename='images/dumbell.png') }}">
+        <span>Personal Training</span>
+    </div>
+    <div class="service-item">
+        <img src="{{ url_for('static', filename='images/yoga.png') }}">
+        <span>Group Fitness Classes</span>
+    </div>
+</div>
+
+</section>
+
+<footer>
+    <p>© 2025 PowerFit Gym | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>

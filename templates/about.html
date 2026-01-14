@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About Us - PowerFit Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>About PowerFit Gym</h1>
+    <p>Dedicated to Your Fitness Journey</p>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/membership">Membership</a>
+</nav>
+
+<section class="content">
+    <h2>Who We Are</h2>
+    <p>
+        PowerFit Gym was established to promote a healthy lifestyle.
+        Our mission is to provide a supportive and motivating environment
+        for people of all fitness levels.
+    </p>
+    <div class="about-images">
+        <img src="{{ url_for('static', filename='images/gym 2.jpeg') }}">
+        <img src="{{ url_for('static', filename='images/gym 3.jpeg') }}">
+    </div>
+    <h2>Why Choose Us?</h2>
+    <ul>
+        <li>Certified Trainers</li>
+        <li>Modern Equipment</li>
+        <li>Affordable Plans</li>
+        <li>Friendly Environment</li>
+    </ul>
+</section>
+
+<footer>
+    <p>© 2025 PowerFit Gym</p>
+</footer>
+
+</body>
+</html>

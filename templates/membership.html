@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Membership - PowerFit Gym</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<header>
+    <h1>Membership Plans</h1>
+    <p>Choose the Plan That Fits You Best</p>
+</header>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About Us</a>
+    <a href="/membership">Membership</a>
+</nav>
+
+<section class="content">
+    <div class="membership-cards">
+        {% for plan in plans %}
+        <div class="card">
+            <h3>{{ plan.name }}</h3>
+            <p>{{ plan.duration }}</p>
+            <p>{{ plan.price }}</p>
+            <button>Join Now</button>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+
+<footer>
+    <p>Contact Us: info@powerfitgym.com</p>
+</footer>
+
+</body>
+</html>

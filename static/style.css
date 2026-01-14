@@ -1,0 +1,192 @@
+/* Font */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background: linear-gradient(to bottom, #F5F5F5, #E8F0F2);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #FF6F3C, #FFA65C);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Navigation */
+nav {
+    background-color: #8AA29E;
+    text-align: center;
+    padding: 12px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 18px;
+    font-weight: 600;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #FF6F3C;
+    left: 0;
+    bottom: -4px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Hero Image */
+.hero img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 20px 0;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.hero img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+}
+
+/* Content Boxes */
+.content {
+    padding: 25px;
+    background-color: white;
+    margin: 25px auto;
+    border-radius: 12px;
+    max-width: 1000px;
+    animation: fadeIn 1.2s ease-in;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.content h2 {
+    color: #FF6F3C;
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(20px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+/* Images inside content */
+.content img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Membership Cards */
+.membership-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: linear-gradient(135deg, #FF6F3C, #FFA65C);
+    color: white;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 12px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.5s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    background: linear-gradient(135deg, #FFA65C, #FF6F3C);
+}
+
+.card button {
+    background-color: white;
+    color: #FF6F3C;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.card button:hover {
+    background-color: #FF6F3C;
+    color: white;
+}
+
+/* Services Icons */
+.services {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* space between each icon+text */
+}
+
+.service-item {
+    text-align: center;
+    transition: transform 0.3s; /* smooth animation */
+}
+
+.service-item img {
+    width: 60px;
+    height: auto;
+    display: block;
+    margin: 0 auto 8px auto;
+    transition: transform 0.3s; /* smooth hover effect */
+}
+
+.service-item span {
+    display: block;
+    font-weight: 500;
+}
+
+/* Hover effect */
+.service-item:hover img {
+    transform: scale(1.2); /* icon grows slightly */
+}
+
+.service-item:hover {
+    transform: translateY(-5px); /* whole item lifts slightly */
+}
+
+/* Footer */
+footer {
+    background-color: #8AA29E;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 25px 0;
+
+}
+
+.about-images img {
+    width: 45%;
+    border-radius: 10px;
+
+
+}
